@@ -12,6 +12,7 @@ body {
   background: #e6ecf0;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  font-family: sans-serif;
 }
 
 h1,
@@ -19,8 +20,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-span {
+h6 {
   font-family: Inter, sans-serif;
 }
 
@@ -28,7 +28,9 @@ input,
 a,
 p,
 button,
-strong {
+strong,
+span,
+small {
   font-family: Lexend, sans-serif;
 }
 
@@ -99,6 +101,7 @@ header#main-header nav ul li {
 
 header#main-header nav ul li img {
   margin-right: 7px;
+  filter: invert(48%) sepia(24%) saturate(267%) hue-rotate(163deg) brightness(88%) contrast(87%);
 }
 
 header#main-header nav ul li:first-child {
@@ -132,6 +135,7 @@ header#main-header div.side div img.search {
   right: 4px;
   top: 8px;
   width: 16px;
+  filter: invert(48%) sepia(24%) saturate(267%) hue-rotate(163deg) brightness(88%) contrast(87%);
 }
 
 header#main-header div.side img.icon-user-nav {
@@ -164,6 +168,7 @@ div.banner {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-size: 16px;
 }
 
 div.bar {
@@ -176,7 +181,7 @@ div.bar .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 270px;
+  padding-left: 285px;
   height: 100%;
 }
 
@@ -215,4 +220,80 @@ div.bar .content ul li strong {
   font-size: 18px;
   font-weight: bold;
   margin-top: 2px;
+}
+
+div.bar .content ul li.active strong {
+  color: var(--azul);
+}
+
+div.bar .content .actions {
+  display: flex;
+  align-items: center;
+}
+
+div.bar .content .actions img {
+  filter: invert(48%) sepia(24%) saturate(267%) hue-rotate(163deg) brightness(88%) contrast(87%);
+}
+
+div.bar .content .actions button {
+  height: 34px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid var(--azul);
+  color: var(--azul);
+  border-radius: 16px;
+
+  margin-right: 20px;
+}
+
+div.wrapper-content {
+  display: flex;
+}
+
+div.wrapper-content aside.profile {
+  width: 260px;
+}
+
+div.wrapper-content aside.profile img {
+  width: 16px;
+}
+
+div.wrapper-content aside.profile img#user {
+  width: 200px;
+}
+
+div.wrapper-content aside.profile span {
+  font-weight: 400;
+}
+
+div.wrapper-content aside.profile p {
+  font-weight: 500;
+  color: #667580;
+}
+
+div.wrapper-content aside.profile ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 7px;
+}
+
+div.wrapper-content aside.profile ul li img {
+  filter: invert(48%) sepia(24%) saturate(267%) hue-rotate(163deg) brightness(88%) contrast(87%);
+  font-size: 15px;
+}
+
+div.wrapper-content aside.profile ul li span {
+  color: #667580;
+  font-size: 15px;
+}
+
+div.wrapper-content aside.profile ul li a {
+  color: blue;
 }
