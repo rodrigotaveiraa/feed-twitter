@@ -363,6 +363,89 @@ div.wrapper-content aside.profile .images strong img {
 
 div.wrapper-content .timeline {
   flex: 1;
+  border-radius: 4px;
+  background: white;
+  margin: 10px 20px 0;
+}
+
+div.wrapper-content .timeline nav {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+}
+
+div.wrapper-content .timeline nav a {
+  text-decoration: none;
+  color: var(--azul);
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+div.wrapper-content .timeline nav a:first-child {
+  margin: 0;
+}
+
+div.wrapper-content .timeline nav a.active {
+  color: #1f2226;
+}
+
+div.wrapper-content .timeline ul.tweets {
+  list-style: none;
+}
+
+div.wrapper-content .timeline ul.tweets li {
+  border-bottom: 1px solid #e6ecf0;
+  padding: 10px 15px;
+  display: flex;
+}
+
+div.wrapper-content .timeline ul.tweets li > img {
+  height: 48px;
+  width: 48px;
+}
+
+div.wrapper-content .timeline ul.tweets li .info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong {
+  font-size: 14px;
+  color: #1f2326;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong span {
+  font-size: 13px;
+  font-weight: normal;
+  color: #7b8b9a;
+}
+
+div.wrapper-content .timeline ul.tweets li .info p {
+  font-size: 14px;
+  color: #1f2326;
+  margin-top: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a img {
+  filter: invert(48%) sepia(9%) saturate(849%) hue-rotate(165deg) brightness(91%) contrast(85%);
+  height: 14px;
+  width: 14px;
 }
 
 div.wrapper-content aside.widgets {
@@ -373,6 +456,7 @@ div.wrapper-content aside.widgets {
 div.wrapper-content aside.widgets .widget {
   background: white;
   padding: 15px;
+  border-radius: 4px;
 }
 
 div.wrapper-content aside.widgets .widget .title {
@@ -413,6 +497,12 @@ div.wrapper-content aside.widgets .follow ul li {
   justify-content: space-between;
   border-bottom: 1px solid #ccd6dd;
   padding: 10px 0;
+}
+
+div.wrapper-content aside.widgets .follow ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: 0;
 }
 
 div.wrapper-content aside.widgets .follow ul li .profile {
@@ -459,5 +549,8 @@ div.wrapper-content aside.widgets .follow ul li .profile .info button {
   border-radius: 16px;
 }
 
-div.wrapper-content aside.widgets .follow ul li .profile > a {
+div.wrapper-content aside.widgets .follow ul li > a {
+  color: #ccd6dd;
+  text-decoration: none;
+  font-size: 14px;
 }
